@@ -178,7 +178,7 @@ p{
     object-fit: contain;
     border: 5px dashed white;
     border-radius: 10px 35px;
-    background: url(el.jpg);
+    background: url(images/el.jpg);
 }
 
 .tags{
