@@ -5,26 +5,17 @@ function toggleMenu(){
     navigation.classList.toggle("active")
 }
 
-// var swiper = new swiper(".service-slider", {
-//     slidesPerView: 1,
-//     spaceBetween: 70,
-//     // autoplay: {
-//     //     delay: 2500,
-//     //     disableOnInteraction: false,
-//     // },
-//     navigation: {
-//     nextEl: ".service-slider .swiper-button-next",
-//     prevEl: ".service-slider .swiper-button-prev",
-//     },
-//     breakpoints: {
-//       640: {
-//         slidesPerView: 2,
-//       },
-//       950: {
-//         slidesPerView: 4,
-//       },
-//       1200: {
-//         slidesPerView: 5,
-//       },
-//     },
-//   });
+let index = 0;
+
+function showSlide(i) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    index = (i + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function prevSlide() { showSlide(index - 1); }
+function nextSlide() { showSlide(index + 1); }
+
+// Auto-slide every 3 seconds
+setInterval(() => { nextSlide(); }, 10000);
