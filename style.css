@@ -478,3 +478,134 @@ margin:0% 1%;
     text-align: center;
 }
 }
+
+
+.offers-container {
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    /* max-width: 900px; */
+    margin: auto;
+}
+
+.offers-list {
+    flex: 1;
+    min-width: 250px; /* Ensures proper wrapping */
+    margin: 10px;
+    
+    padding: 15px;
+ 
+  
+}
+
+.offers-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offers-list li {
+    padding: 8px 0;
+    font-size: 25px;
+
+}
+
+.offers-list li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive: Stack into one column on smaller screens */
+@media (max-width: 768px) {
+    .offers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offers-list {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+
+.contact-section {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    background: #e1e1e1;
+}
+
+.contact-item i {
+    font-size: 29px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 25px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Responsive: Stack items on smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
