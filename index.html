@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Trey</title>
 </head>
 <body>
@@ -26,15 +27,15 @@
         </header>
         <main>
           <div class="hero row flex container">
-            <div class="hero-content">
-                <br><br><br><br><br><br><br><br>
-                <h1>Look your best with top-notch <br>beauty services</h1> <br>
-                <p>
+            <div class="hero-content" >
+                <br><br><br><br><br>
+                <h1 data-aos="fade-right" data-aos-duration="1400" >Look your best with top-notch <br>beauty services</h1> <br><br>
+                <p data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200" >
                     Discover your best self with <br> 
                     our comprehensive range of make-up <br> 
                     skills and hair services!
-                </p> <br>
-                <a href="#contact" class="page-btn active">Book Me</a>
+                </p> <br><br>
+                <a href="#contact" class="page-btn active" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">Book Me</a>
             </div>
           </div>
         </main>
@@ -42,10 +43,10 @@
 
     <div class="about" id="about">
         <div class="about-container">
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-up-right">
                 <img src="images/IMG-20250306-WA0002.jpg" alt="About Image">
             </div>
-            <div class="about-info">
+            <div class="about-info" data-aos="fade-up" >
                 <h2>Meet Your Stylist</h2>
                 <p>Hey! My name is Trey Legendary and I am a hair and makeup stylist based in the Cayman Islands with over 8 years of experince. </p>
                 <p>I am Looking forward to slay you!!!!!!!.</p>
@@ -55,11 +56,12 @@
 
     <hr>
     <br>
+    <br>
     <div class="heading" id="expectation">
         <h2>What to expect</h2>
     </div>
 
-    <div class="tags row container">
+    <div class="tags row container" data-aos="fade-down" data-aos-duration="2000" >
         <div class="tag column">
             <img src="/images/diamond-svgrepo-com.svg" alt="">
             <h3>Quality Service</h3>
@@ -73,15 +75,16 @@
             <h3>High Standards </h3>
         </div>
     </div>
-
+    <br>
     <hr>
+    <br>
     <br>
     <div class="heading" id="expectation">
         <h2>Services</h2>
     </div>
     <center>
 
-        <div class="offers-container">
+        <div class="offers-container"  data-aos="fade-up" data-aos-duration="3000" >
             <!-- First Column -->
             <div class="offers-list">
                 <h3>Makeup Services</h3>
@@ -128,6 +131,7 @@
 
     <hr>
     <br>
+    <br>
 
     <div class="service container" id="service">
         <div class="heading">
@@ -136,7 +140,7 @@
         </div>
 
         <div class="box2">
-            <div class="slider">
+            <div class="slider" data-aos="fade-down" data-aos-duration="2000" >
                 <div class="slides">
                     <img src="images/IMG-20250306-WA0003.jpg" class="slide" alt="Slide 1">
                     <img src="images/IMG-20250306-WA0004.jpg" class="slide" alt="Slide 2">
@@ -161,6 +165,7 @@
 
     <div class="heading" id="contact">
         <h2>Contact Information</h2>
+        <br>
 
         <!-- <div class="tags row container">
             <div class="tag column">
@@ -175,7 +180,7 @@
         </div>
     </div> -->
 
-    <div class="contact-container">
+    <div class="contact-container"  data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
         <div class="contact-item">
             
             <p> Grand cayman, George Town, Cayman Islands </p>
@@ -189,9 +194,9 @@
     </div>
 
     <div class="social-icons">
-        <a href="https://www.facebook.com/people/Slayedbytrey/100095126216105/"><i class='bx bxl-facebook'>F</i></a>
-        <a href="https://www.instagram.com/slayedbytrey/"><i class="bx bxl-instagram">I</i></a>
-        <a href="https://www.tiktok.com/@slayedbytrey?_t=8rVdWCdqZOC&_r=1"><i class="bx bxl-tiktok">T</i></a>
+        <a href="https://www.facebook.com/people/Slayedbytrey/100095126216105/">Facebook</a>
+        <a href="https://www.instagram.com/slayedbytrey/">IG</a>
+        <a href="https://www.tiktok.com/@slayedbytrey?_t=8rVdWCdqZOC&_r=1">TikTok</a>
     </div>
  </div>
 
@@ -214,7 +219,7 @@
         
             <div class="row">
                 <p>
-                    Copyright © 2025 <br> Trey - All rights reserved <br> Designed By: <a href="https://mal-portfolio.netlify.app/">Malik Dekid</a>
+                    Copyright © 2025  Trey - All rights reserved  Designed By: <a href="https://mal-portfolio.netlify.app/">Malik Dekid</a>
                 </p>
                
             </div>
@@ -225,6 +230,12 @@
 
 
     <script src="main.js"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset:1,
+        })
+    </script>
 </body>
 </html>
