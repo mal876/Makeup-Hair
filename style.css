@@ -10,7 +10,16 @@
     padding: 0;
 }
 
-.body{
+
+.box-container{
+    border: 3px solid black;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+body{
     background:#f2e2ce ;
 }
 
@@ -21,9 +30,10 @@ html {
 section{
     background-image:url(images/IMG-20250306-WA0001.jpg) ;
     height: 855px;
-    background-size: cover;  /* Stretches to fill the section */
+    background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 
@@ -32,7 +42,7 @@ section{
     width: 100%;
     height: 100%;
     font-size: 50px;
-    color: #f2e2ce;
+    color: #bf3f57;
 }
 
 ul{
@@ -87,10 +97,10 @@ nav,nav ul{
 }
 
 nav ul a{
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.25rem;
     text-transform: uppercase;
-    color: #f2e2ce;
+    color: #bf3f57;
 }
 
 nav ul a:hover, nav ul a.active{
@@ -417,6 +427,7 @@ h3{
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
+    border-radius: 20px;
 }
 
 .footer .row{
@@ -554,7 +565,7 @@ margin:0% 1%;
     min-width: 250px;
     margin: 10px;
     padding: 20px;
-    background: #f1f1f1;
+    background: white;
     border-radius: 8px;
     text-align: center;
     transition: 0.3s ease-in-out;
