@@ -155,7 +155,7 @@ p{
 
 /* About Section */
 .about {
-    padding: 4rem 2rem;
+    padding: 4rem 9rem;
     background-color: white;
    
 }
@@ -169,27 +169,27 @@ p{
 }
 
 .about-info {
-    flex: 1 1 48%; /* Adjust to give some space between text and image */
+    flex: 1 1 48%; 
     padding: 2rem;
     color: #333;
 }
 
 .about-info h2 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #262621;
 }
 
 .about-info p {
-    font-size: 30px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 1rem;
     color: #bf3f57;
 }
 
 .about-image {
-    flex: 1 1 38%; /* Adjust to give some space between text and image */
+    flex: 1 1 38%; 
 }
 
 .about-image img {
