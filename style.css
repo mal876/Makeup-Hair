@@ -156,6 +156,7 @@ p{
 /* About Section */
 .about {
     padding: 4rem 2rem;
+    background-color: white;
    
 }
 
@@ -188,11 +189,11 @@ p{
 }
 
 .about-image {
-    flex: 1 1 48%; /* Adjust to give some space between text and image */
+    flex: 1 1 38%; /* Adjust to give some space between text and image */
 }
 
 .about-image img {
-    width: 55%;
+    width: 25%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
@@ -282,7 +283,7 @@ h3{
 .slider {
     position: relative;
     width: 80%;
-    max-width: 800px;
+    max-width: 1100px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
@@ -427,7 +428,7 @@ h3{
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .footer .row{
@@ -537,82 +538,250 @@ margin:0% 1%;
 
 
 
-.contact-section {
-    background: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-width: 900px;
-    margin: 40px auto;
+
+
+.offer{
+    padding: 4rem 2rem;
+    background-color: white;
+   
 }
 
-.contact-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: bold;
+
+
+
+
+.policy-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.policy-container  h2, h3, h4 {
     color: #333;
+    font-size: 40px;
+}
+  
+.policy-container  ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 25px;
+}
+  
+.policy-container ul  li {
+    margin-bottom: 10px;
+}
+  
+.policy-footer {
+    margin-top: 30px;
+}
+  
+.bank {
+    margin-top: 20px;
+}
+
+/* Read More Section */
+.additional-content {
+    display: none;
+    margin-top: 20px;
+}
+  
+.read-more-btn {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: black;
+    background-color: #bf3f57;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #bf3f57;
+    padding: 0.4rem 1.5rem;
+    border-radius: 10%;
+}
+  
+.read-more-btn:hover {
+    background-color: #bf3f57;
+    color: white;
+}
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .policy-container {
+      padding: 15px;
+    }
+  
+    .policy-container h2, h3, h4 {
+      font-size: 1.2em;
+    }
+  
+    .policy-container ul li {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .policy-container {
+      padding: 10px;
+    }
+  
+    h2, h3, h4 {
+      font-size: 1em;
+    }
+  
+    li {
+      font-size: 0.8em;
+    }
+  }
+
+
+  
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive 2 per row */
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Service Card */
+.service-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.service-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Text Styling */
+.service-card h3 {
+    margin: 15px 0 10px;
+    font-size: 23px;
+    color: black;
+}
+
+.service-card p {
+    font-size: 19px;
+    color: black;
+}
+
+/* Price Styling */
+.price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Stacks 1 per row on small screens */
+    }
+
+    .service-img {
+        height: 130px;
+    }
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-section {
+    background-color: white;
+    padding: 40px 20px;
 }
 
 .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact-item {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-}
-
-.contact-item:hover {
-    background: #e1e1e1;
-}
-
-.contact-item i {
-    font-size: 29px;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.contact-item p {
-    margin: 0;
-    font-size: 25px;
-    color: #333;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: black;
-    
-    padding: 10px;
-    border-radius: 50%;
-    margin: 5px;
-    display: flex;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    transition: 0.3s ease-in-out;
 }
 
+/* Contact Info */
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-/* Responsive: Stack items on smaller screens */
-@media (max-width: 768px) {
+.contact-info h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map */
+.contact-map iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .contact-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* Stack on small screens */
     }
 }
+
+
