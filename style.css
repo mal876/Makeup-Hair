@@ -33,7 +33,7 @@ section{
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 
@@ -155,8 +155,9 @@ p{
 
 /* About Section */
 .about {
-    padding: 4rem 9rem;
+    padding: 1rem 4rem;
     background-color: white;
+    border: 1px solid black;
    
 }
 
